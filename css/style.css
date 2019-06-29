@@ -26,7 +26,7 @@ p {
   }
 
 /* GRID CSS, 3x5*/
-.gridcontainer{
+/* .gridcontainer{
     display: grid;
     grid-template-columns: auto 960px auto;
     grid-template-rows: 117px 30px auto 30px 80px;
@@ -36,14 +36,17 @@ p {
     top: 0;
     right: 0;
     min-height: 100%;
-}
+} */
 
 /*HEADER COMPONENTS START*/
 .header {
     background-color: #ffffff;
+    /* grid-column: span 3;
+    grid-row: 1; */
     border: hidden;
     border-bottom: solid;
     border-color: #cccccc;
+    margin-top: -21px;
 }
 
 .yourname {
@@ -65,10 +68,9 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
     align-items: baseline;
+    margin-bottom: 0;
 }
 
 .button {
@@ -98,10 +100,10 @@ p {
     border: 1px solid;
     border-color: #dddddd;
     padding: 1px 30px 20px 30px;
-    width: 900px;
+    width: auto;
     margin: auto;
-    grid-column: 2;
-    grid-row: 3;
+    /* grid-column: 2;
+    grid-row: 3; */
     font-size: 18px;
 } 
 
@@ -123,8 +125,8 @@ footer{
     border-top: 8px solid #4aaaa5;
     color: white;
     background: gray;
-    grid-column: span 3;
-    grid-row: 5;
+    /* grid-column: span 3;
+    grid-row: 5; */
     padding-top: 20px;
     align-self: end;
     font-size: 12px;
@@ -135,7 +137,7 @@ footer{
 /*PORTFOLIO*/
 
 /*PORTFOLIO GRID 2x4*/
-.portfolioGrid{
+/* .portfolioGrid{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto;
@@ -143,15 +145,15 @@ footer{
     grid-row-gap: 30px;
     justify-content: start;
     justify-items: center;
-}
+} */
 
 .gridPic{
     object-fit: cover;
     height: 200px;
     width: 250px;
     position: relative;
-    grid-column: inherit;
-    grid-row: inherit;
+    /* grid-column: inherit;
+    grid-row: inherit; */
     transition:0.4s;
 }
 
@@ -163,8 +165,8 @@ footer{
 
 .gridPic .portfolioText{
     position: absolute;
-    grid-column: inherit;
-    grid-row: inherit;
+    /* grid-column: inherit;
+    grid-row: inherit; */
     background: #4aaaa5;
     color: #ffffff;
     top: 75%;
